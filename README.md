@@ -1,14 +1,14 @@
-# z21-sim
+## z21-sim
 
 Headless [Z21 LAN protocol](https://www.z21.eu) test server for local development and automated tests.
 
 The container runs [ZIMO-Elektronik/Z21](https://github.com/ZIMO-Elektronik/Z21) **Z21Posix** — a reference implementation of the Z21 UDP API, not Roco hardware firmware. It listens on UDP port **21105**, the same port as a physical Z21 command station.
 
-## Prerequisites
+### Prerequisites
 
 - Docker
 
-## Quick start
+### Quick start
 
 ```bash
 make build
@@ -21,11 +21,11 @@ Stop the simulator:
 make stop
 ```
 
-## Makefile
+### Makefile
 
 Run `make` or `make help` for available targets and variables.
 
-## Manual Docker usage
+### Manual Docker usage
 
 Build:
 
@@ -51,6 +51,6 @@ Stop:
 docker rm -f z21-sim
 ```
 
-## License
+### License
 
 [MIT](LICENSE)
