@@ -4,6 +4,8 @@ Headless [Z21 LAN protocol](https://www.z21.eu) test server for local developmen
 
 The container runs [ZIMO-Elektronik/Z21](https://github.com/ZIMO-Elektronik/Z21) **Z21Posix** — a reference implementation of the Z21 UDP API, not Roco hardware firmware. It listens on UDP port **21105**, the same port as a physical Z21 command station.
 
+Z21Posix is patched at build time to answer `LAN_GET_SERIAL_NUMBER` with a simulator serial: decimal prefix **999** plus a time-based suffix fixed for the lifetime of the process (for example `9991730123`).
+
 ### Prerequisites
 
 - Docker

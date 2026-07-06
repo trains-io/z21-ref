@@ -21,6 +21,10 @@ WORKDIR /src
 RUN git clone --depth 1 --branch "${Z21_VERSION}" \
       https://github.com/ZIMO-Elektronik/Z21.git .
 
+# Z21Posix does not implement serialNumber(); upstream returns 0 and skips the reply.
+COPY overlay/examples/posix/main/server.hpp overlay/examples/posix/main/server.cpp \
+  examples/posix/main/
+
 # Z21Posix is headless; skip the Qt simulator (Release configures Qt from source).
 RUN sed -i '/add_subdirectory(sim)/d' examples/CMakeLists.txt
 
