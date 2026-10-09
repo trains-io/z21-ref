@@ -12,8 +12,8 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE: ghcr.io/trains-io/z21-sim
-  Z21_VERSION: v0.4.0
+  IMAGE: ghcr.io/trains-io/z21-ref
+  Z21_VERSION: v0.4.3
 
 jobs:
   publish:

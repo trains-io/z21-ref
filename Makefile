@@ -1,14 +1,14 @@
-IMAGE ?= ghcr.io/trains-io/z21-sim
+IMAGE ?= ghcr.io/trains-io/z21-ref
 TAG ?= local
-Z21_VERSION ?= v0.4.0
-CONTAINER ?= z21-sim
+Z21_VERSION ?= v0.4.3
+CONTAINER ?= z21-ref
 
 .PHONY: help build run stop
 
 .DEFAULT_GOAL := help
 
 help: ## Show available targets
-	@echo "z21-sim — Docker image for the ZIMO Z21Posix LAN test server"
+	@echo "z21-ref — Docker image for the ZIMO Z21Posix LAN test server"
 	@echo ""
 	@echo "Usage: make [target] [VAR=value ...]"
 	@echo ""

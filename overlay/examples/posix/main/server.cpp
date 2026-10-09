@@ -5,7 +5,7 @@
 
 namespace {
 
-// Decimal serials starting with 999 identify z21-sim instances (vs physical Z21 hardware).
+// Decimal serials starting with 999 identify z21-ref instances (vs physical Z21 hardware).
 constexpr uint32_t kSimSerialPrefix = 999u;
 
 int32_t makeSimulatorSerialNumber() {
